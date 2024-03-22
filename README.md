@@ -93,7 +93,7 @@ helm upgrade airflow apache-airflow/airflow --namespace airflow -f airflow_var.y
 ## enviar imagem docker para o kind
 
 ```
-docker build --pull --tag my-dags:0.0.2 .
+docker build --pull --tag my-dags .
 
 kind load docker-image my-dags:latest
 ```

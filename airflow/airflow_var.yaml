@@ -3,3 +3,12 @@ images:
   airflow:
     repository: my-dags
     tag: latest
+extraEnv: ~
+# eg:
+extraEnv: |
+  - name: AIRFLOW__CORE__DEFAULT_UI_TIMEZONE
+    value: America/Sao_Paulo
+  - name: AIRFLOW__CORE__DEFAULT_TIMEZONE
+    value: America/Sao_Paulo
+  - name: AIRFLOW__WEBSERVER__INSTANCE_NAME
+    value: k8s_dev    
