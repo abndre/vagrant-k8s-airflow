@@ -1,0 +1,5 @@
+webserverSecretKey: '00e19602f701b2fd983675b10f2b51b7'
+images:
+  airflow:
+    repository: my-dags
+    tag: latest
